@@ -1,0 +1,11 @@
+<svg id="グループ_2" data-name="グループ 2" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <g id="グループ_1" data-name="グループ 1">
+    <g id="楕円形_1" data-name="楕円形 1" fill="none" stroke="#42b983" stroke-width="60">
+      <circle cx="256" cy="256" r="256" stroke="none"/>
+      <circle cx="256" cy="256" r="226" fill="none"/>
+    </g>
+    <line id="線_1" data-name="線 1" y2="390" transform="translate(154 61)" fill="none" stroke="#42b983" stroke-linecap="round" stroke-width="60"/>
+    <path id="パス_1" data-name="パス 1" d="M0,0H326.221" transform="translate(153.971 264)" fill="none" stroke="#42b983" stroke-linecap="round" stroke-width="60"/>
+    <line id="線_3" data-name="線 3" x2="91" y2="187" transform="translate(275 264)" fill="none" stroke="#42b983" stroke-linecap="round" stroke-width="60"/>
+  </g>
+</svg>
