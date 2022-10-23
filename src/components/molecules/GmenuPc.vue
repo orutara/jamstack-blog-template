@@ -3,9 +3,7 @@
     <ul class="flex">
       <li v-for="(link, i) in links" :key="i">
         <nuxt-link :to="link.path" class="mr-8 flex items-center">
-          <img class="nav_icon" :src="link.iconPath" alt="" /><span>{{
-            link.label
-          }}</span>
+          <span>{{ link.label }}</span>
         </nuxt-link>
       </li>
     </ul>
@@ -17,8 +15,7 @@ export default {
   data() {
     return {
       links: [
-        { path: "/recommend", iconPath: require("@/assets/images/icon_recommend.svg"), label: "Recommend" },
-        { path: "/categories", iconPath: require("@/assets/images/icon_category.svg"), label: "Category" }
+        { path: "/categories", label: "Category" }
       ]
     }
   }

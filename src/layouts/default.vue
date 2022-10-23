@@ -1,11 +1,11 @@
 <template>
   <div>
     <Header />
-    <div v-if="$route.path === '/recommend'">
-      <PageNamebarRecommend />
+    <div v-if="$route.path === '/category/landing-page'">
+      <PageNameBarLandingPage />
     </div>
-    <div v-else-if="$route.path === '/categories'">
-      <PageNamebarCategory />
+    <div v-else-if="$route.path === '/category/bunner'">
+      <PageNameBarBunner />
     </div>
     <div v-else>
     </div>

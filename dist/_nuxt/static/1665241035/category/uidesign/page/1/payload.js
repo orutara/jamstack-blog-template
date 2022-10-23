@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/category/uidesign/page/1", {data:[{}],fetch:{},mutations:void 0});

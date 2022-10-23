@@ -1,6 +1,6 @@
 <template>
   <div class="author bg-white py-8 px-5">
-    <nuxt-link :to="`/category/uidesign`" class="block hover:bg-hover">
+    <nuxt-link :to="`/category/landing-page`" class="block hover:bg-hover">
       <div class="flex items-center pl-2 py-2 mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@
         <p class="font-bold ml-3 mb-0">Category1</p>
       </div>
     </nuxt-link>
-    <nuxt-link :to="`/category/code`" class="block hover:bg-hover">
+    <nuxt-link :to="`/category/bunner`" class="block hover:bg-hover">
       <div class="flex items-center pl-2 py-2 mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,5 @@
-import { client } from './utils/microcms'
+import { client } from './src/utils/microcms';
 const { API_KEY, SERVICE_ID } = process.env
-// import axios from 'axios'
 
 export default {
   srcDir: 'src/',
@@ -21,7 +20,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'robots', content: 'noindex,nofollow' },
     ],
-    link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -177,41 +176,6 @@ export default {
     },
     dir: 'dist',
   },
-
-  // generate: {
-  //   interval: 100,
-  //   async routes() {
-  //     const range = (start, end) =>
-  //       [...Array(end - start + 1)].map((_, i) => start + i);
-  //     const limit = 50;
-
-  //     const categoryPages = await Promise.all(
-  //       categories.map((categories) =>
-  //         client
-  //           .get({
-  //             endpoint: 'blog',
-  //             queries: {
-  //               limit: 0,
-  //               filters: `category[equals]${categories}`,
-  //             },
-  //           })
-  //           .then((res) => {
-  //             return range(1, Math.ceil(res.totalCount / 10)).map((p) => ({
-  //               route: `/category/${category}/page/${p}`,
-  //             }));
-  //           })
-  //       )
-  //     );
-  //     const flattenCategoryPages = [].concat.apply([], categoryPages);
-
-  //     return [
-  //       index,
-  //       ...pages,
-  //       ...flattenCategoryPages,
-  //     ];
-  //   },
-  //   dir: 'dist',
-  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

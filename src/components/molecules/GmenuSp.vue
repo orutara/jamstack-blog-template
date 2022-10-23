@@ -1,8 +1,8 @@
 <template>
   <nav class="fixed z-50 bottom-0 w-full bg-reverse md:hidden">
     <ul class="flex justify-around my-2 max-w-xs sm:max-w-md m-auto">
-      <li>
-        <nuxt-link to="/">
+      <li class="text-center">
+        <nuxt-link to="/" class="inline-block mx-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -26,33 +26,8 @@
           </svg>
         </nuxt-link>
       </li>
-      <li>
-        <nuxt-link to="/recommend">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="44.5"
-            viewBox="0 0 40 44.5"
-          >
-            <g transform="translate(-636.5 -4848.5)">
-              <path
-                d="M31.273,22.561a2.784,2.784,0,0,0-.134-.852h0a2.786,2.786,0,0,0-2.651-1.932h-7.82l-2.38-7.412a2.785,2.785,0,0,0-5.3,0l1.2.387-1.2-.387L10.6,19.776H2.784A2.786,2.786,0,0,0,.133,21.708h0a2.785,2.785,0,0,0,1.028,3.116h0l6.334,4.548-2.438,7.4h0A2.784,2.784,0,0,0,6.063,39.9h0a2.787,2.787,0,0,0,3.283-.006h0l6.288-4.608,6.288,4.608h0a2.786,2.786,0,0,0,3.282.006h0a2.787,2.787,0,0,0,1.008-3.124l-2.439-7.4,6.334-4.548h0A2.786,2.786,0,0,0,31.273,22.561Zm-2.636.209h0l-7.088,5.089a1.262,1.262,0,0,0-.463,1.422l2.729,8.283.012.08a.257.257,0,0,1-.107.209h0a.253.253,0,0,1-.151.049.259.259,0,0,1-.153-.05h0L16.384,32.7a1.267,1.267,0,0,0-1.495,0L7.854,37.853a.255.255,0,0,1-.152.05.252.252,0,0,1-.151-.049.258.258,0,0,1-.106-.207l.013-.079h0l2.729-8.283a1.262,1.262,0,0,0-.464-1.422L2.635,22.77h0a.255.255,0,0,1-.107-.208l.012-.078a.257.257,0,0,1,.245-.178h8.742a1.263,1.263,0,0,0,1.2-.878l2.662-8.289a.257.257,0,0,1,.489,0l2.662,8.289a1.263,1.263,0,0,0,1.2.878h8.742a.256.256,0,0,1,.244.178l.012.078A.256.256,0,0,1,28.638,22.77Z"
-                transform="translate(640.501 4838.069)"
-              />
-              <text
-                transform="translate(636.5 4892)"
-                font-size="10"
-                font-family="YuGo-Bold, YuGothic"
-                font-weight="700"
-              >
-                <tspan x="0" y="0">Recommend</tspan>
-              </text>
-            </g>
-          </svg>
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/categories">
+      <li class="text-center">
+        <nuxt-link to="/categories" class="inline-block mx-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -88,12 +63,17 @@ export default {
 
 <style scoped>
 
+li {
+  flex: 1 0 50%;
+  border-right: 1px solid #ddd;
+}
+
+li:last-child {
+  border: none;
+}
+
 svg  {
   width: auto;
   height: 45px;
-}
-
-.active svg g {
-  fill: #42b983;
 }
 </style>
