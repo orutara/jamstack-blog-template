@@ -41,8 +41,6 @@ export default {
   buildModules: [
     'nuxt-microcms-module',
     '@nuxtjs/composition-api/module',
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
