@@ -1,13 +1,13 @@
 <template>
-  <header class="bg-primary text-secondary">
+  <header class="bg-white">
     <div class="container mx-auto">
       <div class="py-3 md:flex md:justify-between md:items-center md:py-5">
-        <div class="mx-auto md:ml-4">
+        <div class="mx-auto pl-4 md:pl-0 md:ml-4">
           <nuxt-link to="/">
-            Logo
+            <img src="@/assets/images/img_logo.svg" alt="">
           </nuxt-link>
         </div>
-        <GmenuPc />
+        <!-- <GmenuPc /> -->
       </div>
     </div>
   </header>

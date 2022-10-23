@@ -5,7 +5,7 @@
       <nuxt-link :to="`/${content.id}`" class="block">
         <img class="ogimage" :src="`${content.ogimage.url}`" alt="" />
         <div class="card-body font-bold bg-white px-2 py-4 md:px-4 md:py-6">
-          <p class="mb-0 text-sm md:text-base">
+          <p class="line-clamp-2 mb-0 text-sm md:text-base">
             {{ content.title }}
           </p>
         </div>
@@ -15,20 +15,6 @@
 </template>
 
 <script>
-// export default {
-//   async asyncData({ $microcms }) {
-//     const data = await $microcms.get({
-//       endpoint: 'blog',
-//       queries: { limit: 10 },
-//     })
-//     return data
-//   },
-//   data() {
-//     return {
-//       contents: this.contents || []
-//     }
-//   }
-// }
 export default {
   async asyncData({ params, $microcms }) {
     const page = params.id || '1';
@@ -73,7 +59,7 @@ export default {
   head() {
     return {
       titleTemplate: null,
-      title: 'blog-jamstack',
+      title: 'orutara Log',
     };
   },
 };
@@ -82,12 +68,25 @@ export default {
 <style scoped>
 .ogimage {
   width: 100%;
-  height: clamp(95px, 20vw, 200px);
+  height: clamp(138px, 34vw, 250px);
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
 .card-body {
-  min-height: 96px;
+  min-height: 72px;
+}
+
+@media (min-width: 768px) {
+  .card-body {
+    min-height: 96px;
+  }
+}
+
+p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 </style>
