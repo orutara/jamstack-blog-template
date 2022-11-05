@@ -25,7 +25,7 @@ export default {
         : undefined;
     const limit = 10;
     const data = await $microcms.get({
-      endpoint: 'blog',
+      endpoint: 'YOUR_ENDPOINT',
       queries: {
         limit,
         offset: (page - 1) * limit,
@@ -59,7 +59,7 @@ export default {
   head() {
     return {
       titleTemplate: null,
-      title: 'orutara Log',
+      title: 'Title',
     };
   },
 };

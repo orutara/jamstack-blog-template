@@ -19,7 +19,7 @@
 export default {
   async asyncData({ $microcms, params }) {
     const data = await $microcms.get({
-      endpoint: 'blog',
+      endpoint: 'YOUR_ENDPOINT',
       contentId: params.slug,
       queries: {
         depth: 2,
