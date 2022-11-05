@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-2 gap-3 md:gap-8">
     <div v-show="contents.length === 0" class="loader">記事がありません</div>
-    <article v-for="content in contents" :key="content.id" class="mb-5 md:mb-0">
+    <article v-for="content in contents" :key="content.id" class="mb-6 md:mb-0">
       <nuxt-link :to="`/${content.id}`" class="block">
         <img class="ogimage" :src="`${content.ogimage.url}`" alt="" />
         <div class="card-body font-bold bg-white px-2 py-4 md:px-4 md:py-6">

@@ -12,7 +12,7 @@
     <div class="bg-bg2">
       <div class="container mx-auto lg:grid lg:grid-cols-3">
         <div class="mx-4 md:col-span-2">
-          <main class="py-8 md:py-10">
+          <main class="py-9 md:py-10">
             <div class="container mx-auto">
               <nuxt />
             </div>

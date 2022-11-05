@@ -1,7 +1,7 @@
 <template>
   <div class="author bg-white py-8 px-5">
     <nuxt-link :to="`/category/landing-page`" class="block hover:bg-hover">
-      <div class="flex items-center pl-2 py-2 mb-4">
+      <div class="flex items-center pl-2 py-2 mb-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

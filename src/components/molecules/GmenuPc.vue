@@ -2,7 +2,7 @@
   <nav class="hidden md:block">
     <ul class="flex">
       <li v-for="(link, i) in links" :key="i">
-        <nuxt-link :to="link.path" class="mr-8 flex items-center">
+        <nuxt-link :to="link.path" class="mr-7 flex items-center">
           <span>{{ link.label }}</span>
         </nuxt-link>
       </li>

@@ -1,6 +1,6 @@
 <template>
   <nav class="fixed z-50 bottom-0 w-full bg-reverse md:hidden">
-    <ul class="flex justify-around my-2 max-w-xs sm:max-w-md m-auto">
+    <ul class="flex justify-around my-3 max-w-xs sm:max-w-md m-auto">
       <li class="text-center">
         <nuxt-link to="/" class="inline-block mx-auto">
           <svg
